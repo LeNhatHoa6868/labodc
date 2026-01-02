@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>LabODC - Hệ thống quản lý ODC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>LabODC</h1>
+    <p>Hệ thống quản lý mô hình Offshore Development Center tại UTH</p>
+</header>
+
+<nav>
+    <a href="#overview">Tổng quan</a>
+    <a href="#actors">Tác nhân</a>
+    <a href="#features">Chức năng</a>
+    <a href="#dashboard">Dashboard</a>
+</nav>
+
+<section id="overview">
+    <h2>📌 Tổng quan hệ thống</h2>
+    <p>
+        LabODC là nền tảng phi lợi nhuận giúp kết nối doanh nghiệp với sinh viên
+        thông qua các dự án thực tế được triển khai tại phòng Lab của Đại học UTH.
+        Hệ thống đảm bảo minh bạch, trách nhiệm giải trình và chuẩn hóa vận hành.
+    </p>
+</section>
+
+<section id="actors">
+    <h2>👥 Các tác nhân tham gia</h2>
+    <ul>
+        <li><b>Sinh viên (Talent):</b> Thực hiện dự án, học tập thực tế</li>
+        <li><b>Trưởng nhóm (Talent Leader):</b> Quản lý nhóm, phân công công việc</li>
+        <li><b>Mentor (Giảng viên):</b> Giám sát, đánh giá chất lượng</li>
+        <li><b>Doanh nghiệp:</b> Đề xuất và theo dõi dự án</li>
+    </ul>
+</section>
+
+<section id="features">
+    <h2>⚙️ Chức năng chính</h2>
+    <div class="grid">
+        <div class="card">✔️ Phê duyệt doanh nghiệp & dự án</div>
+        <div class="card">✔️ Quản lý nhân sự ODC</div>
+        <div class="card">✔️ Báo cáo tiến độ dự án</div>
+        <div class="card">✔️ Quản lý tài chính 70/20/10</div>
+        <div class="card">✔️ Dashboard theo vai trò</div>
+    </div>
+</section>
+
+<section id="dashboard">
+    <h2>📊 Dashboard mô phỏng</h2>
+    <button onclick="showRole('student')">Sinh viên</button>
+    <button onclick="showRole('leader')">Trưởng nhóm</button>
+    <button onclick="showRole('mentor')">Mentor</button>
+    <button onclick="showRole('enterprise')">Doanh nghiệp</button>
+
+    <div id="result" class="dashboard-box">
+        👉 Chọn vai trò để xem chức năng
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - LabODC | Đồ án sinh viên UTH</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
